@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+  <body style="background-color:powderblue;">
+    <h1 style="color:blue;">World of Programming (CSE120)</h1>
+    <h2 style="color:red;">Student name: <span>Hayk Hunanyan <span> </h2>
+  <table>
+    <tr>
+      <th>Component</th>
+      <th>Percentage</th>
+      <th>Grade</th>
+    </tr>
+    <tr>
+      <td>Attendance</td>
+      <td>10%</td>
+      <td>
+        <input type="text" id="attendance_grade" value = 100>
+      </td>
+    </tr>
+    <tr>
+      <td>Homework</td>
+      <td>20%</td>
+      <td>
+        <input type="text" id="homework_grade" value = 100>
+      </td>
+    </tr>
+    <tr>
+      <td>Midterm</td>
+      <td>30%</td>
+      <td>
+        <input type="text" id="midterm_grade" value = 100>
+      </td>
+    </tr>
+    <tr>
+      <td>Final</td>
+      <td>40%</td>
+      <td>
+        <input type="text" id="final_grade" value = 100>
+      </td>
+    </tr>
+  </table>
+  <button onclick = "current_grade()">Calculate the current grade </button>
+  <h3>My current grade is...</h3>
+  </body>
+</html>

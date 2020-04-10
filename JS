@@ -1,0 +1,34 @@
+function calculateGrade() {
+  var attendance_perc = parseInt(document.getElementById("attendance_perc").innerHTML)
+
+  var attendance_grade = parseFloat(document.getElementById("attendance_grade").value)
+
+  var curr_attendance = attendance_perc * attendance_grade/100 
+  console.log(currentGrade)
+
+  var homework_perc = parseInt(document.getElementById("homework_perc").innerHTML)
+
+  var homework_grade = parseFloat(document.getElementById("homework_grade").value)
+
+  var curr_homework = homework_perc * homework_grade/100
+  console.log(currentGrade)
+
+  var midterm_perc = parseInt(document.getElementById("midterm_perc").innerHTML)
+
+  var midterm_grade = parseFloat(document.getElementById("midterm_grade").value)
+
+  var curr_midterm = midterm_perc * midterm_grade/100
+  console.log(currentGrade)
+
+  var final_perc = parseInt(document.getElementById("final_perc").innerHTML)
+  
+  var final_grade = parseFloat(document.getElementById("final_grade").value)
+
+  var curr_final = final_perc * final_grade/100
+  console.log(currentGrade)
+
+  console.log(curr_attendance, curr_homework, curr_midterm, curr_final)
+  var current_grade = curr_attendance + curr_homework + curr_midterm + curr_final
+  console.log(current_grade)
+  document.getElementById("total_grade").innerHTML = current_grade
+}

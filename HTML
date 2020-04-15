@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -18,34 +18,34 @@
     </tr>
     <tr>
       <td>Attendance</td>
-      <td>10%</td>
+      <td><span id="attendance_perc">10%</span></td>
       <td>
         <input type="text" id="attendance_grade" value = 100>
       </td>
     </tr>
     <tr>
       <td>Homework</td>
-      <td>20%</td>
+      <td><span id="homework_perc">20%</span></td>
       <td>
         <input type="text" id="homework_grade" value = 100>
       </td>
     </tr>
     <tr>
       <td>Midterm</td>
-      <td>30%</td>
+      <td><span id="midterm_perc">30%</span></td>
       <td>
         <input type="text" id="midterm_grade" value = 100>
       </td>
     </tr>
     <tr>
       <td>Final</td>
-      <td>40%</td>
+      <td><span id="final_perc">40%</span></td>
       <td>
         <input type="text" id="final_grade" value = 100>
       </td>
     </tr>
   </table>
-  <button onclick = "current_grade()">Calculate the current grade </button>
+  <button onclick = "calculateGrade()">Calculate the current grade </button>
   <h3>My current grade is...</h3>
   </body>
 </html>

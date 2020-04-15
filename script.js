@@ -30,5 +30,5 @@ function calculateGrade() {
   console.log(curr_attendance, curr_homework, curr_midterm, curr_final)
   var currentGrade = curr_attendance + curr_homework + curr_midterm + curr_final
   console.log(currentGrade)
-  document.getElementById("currentGrade").innerHTML = calculateGrade
+  document.getElementById("currentGrade").innerHTML = currentGrade
 }

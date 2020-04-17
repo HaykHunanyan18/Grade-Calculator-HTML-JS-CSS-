@@ -1,3 +1,17 @@
+function checkGrade(evt) {
+ var grade = parseFloat(evt.currentTarget.value);
+
+ if (grade > 100 || grade < 0) {
+   console.log("Wrong Value")
+   evt.currentTarget.style.color = "red"
+ } else {
+   console.log("Correct Value")
+   evt.currentTarget.style.color = "black"
+ }
+
+}
+
+
 function calculateGrade() {
   var attendance_perc = parseInt(document.getElementById("attendance_perc").innerHTML)
 
